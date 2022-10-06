@@ -23,8 +23,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
+    - {{ compiler('c') }}          # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/RobinHankin/contfrac.git
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Various utilities for evaluating continued fractions.
   license_family: GPL2
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
